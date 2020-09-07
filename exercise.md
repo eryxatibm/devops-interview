@@ -16,7 +16,7 @@ Create a cluster of containers with 3 images.
 
 1. Container 1: Must inclue the MySQL database tables definition from `templates/msql/init_db.sql`
 2. Container 2: Must include a Linux system with the file `data/sample/sample.csv` at the path `/var/data`
-3. Container 3: Must include a Linux system with Task management solution (Jenkins, Cron, Airflow, etc.)
+3. Container 3: Must include a Linux system with Task management solution capable to run Python jobs (Jenkins, Cron, Airflow, etc.)
 
 **Considerations**
 Consider you are the owner of container 2 and Container 3, but not of Container 1.
@@ -32,4 +32,4 @@ Consider you are the owner of container 2 and Container 3, but not of Container 
 
 **Considerations**
 Consider that each record within the DB must have a unique `id` with an auto incremented number.
-
+Use SQL and Python as execution language for the jobs as much as possible
