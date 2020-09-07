@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS useractions;
+
+USE useractions;
+
+CREATE TABLE IF NOT EXISTS useractions.all (
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(128) NOT NULL,
+    user_action VARCHAR(256) NOT NULL,
+    result VARCHAR(128) NULL,
+    action_date TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS useractions.login_attempts (
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(128) NOT NULL,
+    logged BOOLEAN NOT NULL,
+    action_date TIMESTAMP NOT NULL
+);

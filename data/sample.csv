@@ -1,0 +1,8 @@
+id,user,action,result,timestamp
+0,admin,"logging in admin","success",1599436801000
+1,admin,"create user1","user1",1599436861000
+2,admin,"create user2","user2",1599436930000
+3,user1,"logging in user1","success",1599441333000
+4,user2,"logging in user2","failure",1599466366000
+5,user2,"logging in user2","success",1599466486000
+6,user1,"request access to prod",,1599441843000
